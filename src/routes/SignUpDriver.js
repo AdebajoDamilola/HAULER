@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import logo from "../assets/Logo.png";
 import { TbUser } from "react-icons/tb";
 import { BsTelephone } from "react-icons/bs";
@@ -7,13 +8,29 @@ import { FiEyeOff } from "react-icons/fi";
 
 
 function SignUpDriver() {
+  const navigate = useNavigate();
+
+  const navigateToLogin = () => {
+    // 👇️ navigate to /login
+    navigate("/login");
+  };
+  const navigateToDriverSignUp = () => {
+    // 👇️ navigate to /driver1-sign-up
+    navigate("/driver1-sign-up");
+  };
+
+
+
   return (
     <div className="flex">
       <div className="basis-[8%] bg-[#315D95]"></div>
       <div className="basis-[83%] bg-[#FFFFFF] ">
         <div className="flex mt-[16px] justify-between mb-[72px]">
-          <img className="lg:w-[162px] h-[76px] " src={logo} alt="logo" />
-          <button className="bg-[#315D95] w-[180px] h-[44px] rounded-[4px] mr-[8px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]">
+          <img className="lg:w-[213px] h-[48px] " src={logo} alt="logo" />
+          <button
+            onClick={navigateToLogin}
+            className="bg-[#315D95] w-[180px] h-[44px] rounded-[4px] mr-[8px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]"
+          >
             Login
           </button>
         </div>
@@ -50,7 +67,7 @@ function SignUpDriver() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px]  rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px]  rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
                     type="text"
                     placeholder="Enter Name"
                   />
@@ -65,7 +82,7 @@ function SignUpDriver() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
                     type="text"
                     placeholder="Enter Name"
                   />
@@ -80,8 +97,8 @@ function SignUpDriver() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="number"
                     placeholder="+234"
                   />
                 </div>
@@ -95,8 +112,8 @@ function SignUpDriver() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="email"
                     placeholder="Enter Email"
                   />
                 </div>
@@ -110,8 +127,8 @@ function SignUpDriver() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="password"
                     placeholder="Enter Password"
                   />
                 </div>
@@ -125,15 +142,18 @@ function SignUpDriver() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="password"
                     placeholder="Enter Password"
                   />
                 </div>
               </label>
             </div>
           </form>
-          <button className="bg-[#315D95] w-[284px] h-[44px] rounded-[4px] ml-[566px] mr-[250px] mb-[71px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]">
+          <button
+            onClick={navigateToDriverSignUp}
+            className="bg-[#315D95] w-[284px] h-[44px] rounded-[4px] ml-[566px] mr-[250px] mb-[71px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]"
+          >
             Next
           </button>
         </div>

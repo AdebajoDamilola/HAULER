@@ -19,7 +19,7 @@ const SignUpUser = () => {
         <div>
           <p className="ml-[678px] pt-[24px] mr-[118px]  w-[343px] font-lato font-normal text-[20px] leading-[24px] text-[#000000] ">
             Already have an account?
-            <Link>
+            <Link to="/login">
               <span className="ml-[12px] text-[#FB6107] text-[20px] leading-[24px] font-lato font-bold leading-[24px]">
                 Log in here!
               </span>
@@ -45,7 +45,7 @@ const SignUpUser = () => {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px]  rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px]  rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
                     type="text"
                     placeholder="Enter Name"
                   />
@@ -60,7 +60,7 @@ const SignUpUser = () => {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
                     type="text"
                     placeholder="Enter Name"
                   />
@@ -75,8 +75,8 @@ const SignUpUser = () => {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="number"
                     placeholder="+234"
                   />
                 </div>
@@ -90,8 +90,8 @@ const SignUpUser = () => {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="email"
                     placeholder="Enter Email"
                   />
                 </div>
@@ -105,8 +105,8 @@ const SignUpUser = () => {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="password"
                     placeholder="Enter Password"
                   />
                 </div>
@@ -120,8 +120,8 @@ const SignUpUser = () => {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="password"
                     placeholder="Enter Password"
                   />
                 </div>
