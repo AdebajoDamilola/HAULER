@@ -8,6 +8,7 @@ import SelectSignUp from "./routes/SelectSignUp";
 import SignUpUser from "./routes/SignUpUser";
 import SignUpDriver from "./routes/SignUpDriver";
 import SignUpDriver1 from "./routes/SignUpDriver1";
+import OurServices from './routes/OurServices';
 
 
 
@@ -24,6 +25,7 @@ root.render(
       <Route path="/user-sign-up" element={<SignUpUser />} />
       <Route path="/driver-sign-up" element={<SignUpDriver />} />
       <Route path="/driver1-sign-up" element={<SignUpDriver1 />} />
+      <Route path="/our-services" element={<OurServices />} />
     </Routes>
   </Router>
 );

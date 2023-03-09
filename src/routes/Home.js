@@ -1,10 +1,14 @@
 import React from "react";
+import Benefits from "../components/Benefits.js";
+import Navbar from "../components/Navbar.js";
+import Rental from "../components/Rental.js";
 
 function Home() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">home</h1>
-    </div>
+    <>
+      <Navbar />
+      <Rental />
+    </>
   );
 }
 

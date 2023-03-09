@@ -1,35 +1,60 @@
 import React from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import logo from "../assets/Logo.png";
 import { TbUser } from "react-icons/tb";
 import { BsTelephone } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { FiEyeOff } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function SignUpDriver1() {
+  const navigate = useNavigate();
+
+  const navigateToLogin = () => {
+    // 👇️ navigate to /login
+    navigate("/login");
+  };
+  const navigateToDriverSignUp = () => {
+    // 👇️ navigate to /driver-sign-up
+    navigate("/driver-sign-up");
+  };
+
+
   return (
     <div className="flex">
       <div className="basis-[8%] bg-[#315D95]"></div>
       <div className="basis-[83%] bg-[#FFFFFF] ">
         <div className="flex mt-[16px] justify-between mb-[72px]">
-          <img className="lg:w-[162px] h-[76px] " src={logo} alt="logo" />
-          <button className="bg-[#315D95] w-[180px] h-[44px] rounded-[4px] mr-[8px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]">
+          <img className="lg:w-[213px] h-[48px] " src={logo} alt="logo" />
+          <button
+            className="bg-[#315D95] w-[180px] h-[44px] rounded-[4px] mr-[8px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]"
+            onClick={navigateToLogin}
+          >
             Login
           </button>
         </div>
         <div className="ml-[50px] mr-[50px] w-[1100px] h-[849px] mb-[77px] ">
           <div className="flex justify-between ml-[35px] mt-[23px] mr-[47px] mb-[10px]">
-            <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
-              Bio Data
-            </p>
-            <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
-              Vehicle Details
-            </p>
-            <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
-              Documents
-            </p>
-            <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
-              Summary
-            </p>
+            <Link>
+              <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
+                Bio Data
+              </p>
+            </Link>
+            <Link>
+              <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
+                Vehicle Details
+              </p>
+            </Link>
+            <Link>
+              <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
+                Documents
+              </p>
+            </Link>
+            <Link>
+              <p className="font-lato font-normal text-[31px] leading-[37px] text-[#000000] ">
+                Summary
+              </p>
+            </Link>
           </div>
           <div className=" w-[1081px] h-[14px] mb-[48px]">
             <progress value="65" max="100" />
@@ -49,9 +74,9 @@ function SignUpDriver1() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px]  rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px]  rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
                     type="text"
-                    placeholder="Enter Name"
+                    placeholder="Vehicle Manufacturer"
                   />
                 </div>
               </label>
@@ -64,9 +89,9 @@ function SignUpDriver1() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
                     type="text"
-                    placeholder="Enter Name"
+                    placeholder="Vehicle Model"
                   />
                 </div>
               </label>
@@ -80,8 +105,8 @@ function SignUpDriver1() {
                   />
                   <input
                     className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
-                    placeholder="+234"
+                    type="date"
+                    placeholder=""
                   />
                 </div>
               </label>
@@ -94,9 +119,9 @@ function SignUpDriver1() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
                     type="text"
-                    placeholder="Enter Email"
+                    placeholder="Vehicle Color"
                   />
                 </div>
               </label>
@@ -109,7 +134,7 @@ function SignUpDriver1() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#0000000] mt-[19px] focus:outline-none "
                     type="text"
                     placeholder="Enter Password"
                   />
@@ -124,9 +149,9 @@ function SignUpDriver1() {
                     className="absolute pointer-events-none mt-5 ml-[15px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#94A3BB] mt-[19px] focus:outline-none "
-                    type="text"
-                    placeholder="Enter Password"
+                    className=" pl-[55px] rounded-[6px] w-[456px] h-[56px]  ring-1 ring-[#94A3BB] text-[20px] text-[#000000] mt-[19px] focus:outline-none "
+                    type="password"
+                    placeholder="Confirm Password"
                   />
                 </div>
               </label>
@@ -134,7 +159,10 @@ function SignUpDriver1() {
           </form>
 
           <div className="ml-[258px] w-[584px] mr-[308px] flex justify-between mb-[71px]">
-            <button className="bg-[#636D7D] w-[280px] h-[44px] rounded-[4px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]">
+            <button
+              onClick={navigateToDriverSignUp}
+              className="bg-[#636D7D] w-[280px] h-[44px] rounded-[4px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]"
+            >
               Previous
             </button>
             <button className="bg-[#315D95] w-[280px] h-[44px] rounded-[4px] font-lato font-bold text-[20px] leading-[24px] text-[#FFFFFF]">
