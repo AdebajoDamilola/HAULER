@@ -7,29 +7,29 @@ import rentalIcon3 from "../assets/rental-icon3.png";
 function Rental() {
   return (
     <div>
-      <div className="relative w-[1512px] h-[791px]">
-        <img
-          className="absolute -z-10 w-[1512px] h-[791px]"
-          src={Truck2}
-          alt="Truck"
-        />
-        <h1 className="w-[803px] h-[192px] absolute -z-10 mt-[215px] mb-[154px] ml-[369px] mr-[339px] font-lato font-extrabold text-[79px] text-center leading-[95px] text-[#FFFFFF]">
-          Rent a perfect Truck for any occasion
-        </h1>
-        <p className="absolute -z-10 text-[#FFFFFF] font-lato font-normal text-[32px] leading-[39px] ml-[588px] mr-[589px] mt-[560px] w-[335px] h-[39px]">
-          Urban Transit redefined
-        </p>
+      <div
+        className="relative w-full h-[791px] text-center flex flex-col justify-center items-center h-screen"
+        style={{ backgroundImage: `url(${Truck2})` }}
+      >
+        <div className="">
+          <h1 className="w-full -z-10 mb-8 font-lato font-extrabold lg:text-[79px] text-center lg:leading-[95px] leading-[95px] text-[#FFFFFF]">
+            Rent a perfect Truck <br />for any occasion
+          </h1>
+          <p className="-z-10 text-[#FFFFFF] font-lato font-normal text-[32px] leading-[39px]">
+            Urban Transit redefined
+          </p>
+        </div>
       </div>
 
       <div className="">
-        <div className="w-[1210px] h-[686px] ml-[150px] mr-[151px] mb-[154px] mt-[188px]">
+        <div className="w-full h-[686px]  mb-[154px] mt-[188px]">
           <p className="font-lato text-[32px] font-normal leading-[39px] text-center text-[#636D7D] mb-[33px] ">
             Our Services
           </p>
           <h2 className="font-lato text-[64px] font-semibold leading-[76px] text-center text-[#000000] mb-[33px] ">
             Rental Solutions
           </h2>
-          <div className="flex">
+          <div className="lg:flex justify-center">
             <div className="w-[420px] h-[238px]">
               <img
                 className=" w-[105px] h-[105px] ml-[157px] mr-[157px] mb-[8px]  "
