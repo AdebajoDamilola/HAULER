@@ -17,7 +17,7 @@ function Navbar() {
   return (
 
     <div className="sticky top-0 bg-[#FFFFFF]">
-      <div className="w-[1171px] h-[56px] mt-[31px] mb-[31px] ml-[168px] mr-[168px] flex">
+      <div className="w-full mt-[31px] mb-[31px] ml-[168px] mr-[168px] flex">
         <img className="w-[214px] h-[48px] mr-[117px]" src={logo} alt="logo" />
         <div className="flex w-[504px] h-[25px] justify-between mr-[117px] mt-[16px] mb-[16px]">
           <Link to="/">
