@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.js";
 import Rental from "../components/Rental.js";
 
 function Home() {
+  
   return (
     <>
       <Navbar />
