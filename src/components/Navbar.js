@@ -81,12 +81,13 @@ function Navbar() {
               size={50}
               style={{
                 color: "#000000",
+                
               }}
             />
           )}
           {/* 👇️ show elements on click */}
           {click && (
-            <div className="pr-[0px] pl-[15px] translate-x-6  bg-black w-[250px] h-[200px] opacity-[.67]">
+            <div className="pr-[0px] pl-[15px] translate-x-6  bg-black w-[170px] h-[200px] opacity-[.67]">
               <Link to="/">
                 <p className="mt-[28px] pb-[19px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
                   Home
