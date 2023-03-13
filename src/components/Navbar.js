@@ -86,24 +86,24 @@ function Navbar() {
           )}
           {/* 👇️ show elements on click */}
           {click && (
-            <div className="pr-[30px] translate-x-6  bg-black">
+            <div className="pr-[0px] pl-[15px] translate-x-6  bg-black w-[250px] h-[200px] opacity-[.67]">
               <Link to="/">
-                <p className="pt-[25px] pb-[10px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
+                <p className="mt-[28px] pb-[19px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
                   Home
                 </p>
               </Link>
-              <Link to="/">
-                <p className="pb-[10px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
+              <Link to="/about-us">
+                <p className="pb-[19px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
                   About
                 </p>
               </Link>
-              <Link to="/">
-                <p className="pb-[10px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
+              <Link to="/contact-us">
+                <p className="pb-[19px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
                   Contact us
                 </p>
               </Link>
-              <Link to="/">
-                <p className="pb-[10px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
+              <Link to="/our-services">
+                <p className="pb-[19px] text-[21px] leading-[25px] font-extrabold font-lato text-[#FFFFFF] ">
                   Our Services
                 </p>
               </Link>
