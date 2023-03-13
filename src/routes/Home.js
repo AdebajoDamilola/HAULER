@@ -10,6 +10,7 @@ import Rental from "../components/Rental.js";
 
 
 function Home() {
+  
   return (
     <>
       <Navbar />
