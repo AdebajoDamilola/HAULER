@@ -15,7 +15,7 @@ function Rental() {
   return (
     <div>
       <div
-        className="relative w-full h-[651px] flex flex-col justify-center items-center"
+        className="relative lg:w-screen md:w-screen sm:w-screen h-[651px] flex flex-col justify-center items-center"
         style={{
           background: `linear-gradient(45deg, rgb(0 0 0 / 55%), transparent), url(${Truck2})`,
           backgroundPosition: "bottom",}}>

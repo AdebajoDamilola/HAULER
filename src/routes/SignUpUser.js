@@ -26,7 +26,7 @@ const SignUpUser = () => {
             </Link>
           </p>
           <div className="mb-[56px] mr-[131px]  ">
-            <img className="lg:w-[147px] h-[89px] " src={logo} alt="logo" />
+            <img className="lg:w-[213px] h-[89px] " src={logo} alt="logo" />
           </div>
         </div>
 

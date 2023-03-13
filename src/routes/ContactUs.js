@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Truck2 from "../assets/Truck2.png";
 
-function OurServices() {
+function ContactUs() {
   return (
     <div>
       <Navbar />
@@ -18,11 +18,10 @@ function OurServices() {
           <h1 className="w-full -z-10 mb-8 font-lato font-extrabold text-[45px] lg:text-[79px] text-center lg:leading-[95px] leading-[95px] text-[#FFFFFF]">
             Coming Soon <br />
           </h1>
-          
         </div>
       </div>
     </div>
   );
 }
 
-export default OurServices;
+export default ContactUs;

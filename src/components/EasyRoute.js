@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Chat from "../assets/chat.png";
 import EasyRouteImg from "../assets/easy-route.png";
 
@@ -19,11 +20,13 @@ const EasyRoute = () => {
           inspire your next move and to achieve maximum ease on all things
           logistics.
         </p>
-        <div className="text-center">
-          <a href="/" className="bg-[#FC7B30] py-2 rounded px-5 text-white">
-            Register
-          </a>
-        </div>
+        <Link to="/select-sign-up">
+          <div className="text-center">
+            <a href="" className="bg-[#FC7B30] py-2 rounded px-5 text-white">
+              Register
+            </a>
+          </div>
+       </Link> 
       </div>
       <div>
       <img
