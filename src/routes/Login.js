@@ -14,7 +14,7 @@ function Login() {
     <div className="lg:flex lg:flex-row ">
       <div className="lg:basis-[22%]  ">
         <img
-          className="lg:w-[402px] lg:h-[1058px] md:hidden sm:hidden"
+          className="lg:w-[402px] lg:h-[1058px] md:w-[0px] md:h-[0px] sm:w-[0px] sm:h-[0px]"
           src={Truck}
           alt="Truck"
         />
