@@ -29,7 +29,7 @@ function Rental() {
           </p>
         </div>
 
-        <div className="lg:flex justify-center gap-8 bg-white p-5 rounded-full items-center absolute hidden md:block bottom-[-48px]">
+        <div className="md:hidden sm:hidden lg:flex justify-center gap-8 bg-white p-5 rounded-full items-center absolute hidden md:block bottom-[-48px]">
           <div className="flex gap-8">
             <svg
               width="36"
