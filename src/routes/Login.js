@@ -13,15 +13,19 @@ function Login() {
   return (
     <div className="lg:flex lg:flex-row ">
       <div className="lg:basis-[22%]  ">
-        <img className="lg:w-[402px] lg:h-[1058px] md:hidden sm:hidden" src={Truck} alt="Truck" />
+        <img
+          className="lg:w-[402px] lg:h-[1058px] md:hidden sm:hidden"
+          src={Truck}
+          alt="Truck"
+        />
       </div>
       <div className="lg:basis-[78%]  md:w-full sm:w-full bg-gradient-to-b from-[#C3D8F4] to-[#315D95]">
         <img
-          className="lg:w-[214px] md:w-[150px] sm:w-[150px] lg:h-[48px] md:h-[48px] sm:h-[48px] ml-[226px] mb-[57px] mt-[12px]"
+          className="lg:w-[214px] md:w-[150px] sm:w-[150px] lg:h-[48px] md:h-[48px] sm:h-[48px] lg:ml-[226px] md:ml-[50px] sm:ml-[30px]  mb-[57px] lg:mt-[12px] md:mt-[12px] sm:mt-[12px]"
           src={logo}
           alt="logo"
         />
-        <div className="lg:w-[896px] lg:h-[865px] md:w-[600px] md:w-[600px] bg-[#FFFFFF] lg:ml-[24px] md:ml-[100px] sm:ml-[50px] sm:mr-[50px] md:mr-[100px]  rounded-[10px]">
+        <div className="lg:w-[896px] lg:h-[865px] md:w-[600px] md:w-[600px] bg-[#FFFFFF] lg:ml-[24px] md:ml-[40px] sm:ml-[20px] sm:mr-[20px] md:mr-[40px]  rounded-[10px]">
           <div className="lg:pt-[64px] md:pt-[64px] sm:pt-[64px] lg:ml-[163px] md:ml-[50px] md:mr-[50px] sm:ml-[50px] sm:mr-[50px] lg:mr-[163px] lg:pb-[24px] lg:mb-[24px]">
             <form>
               <label className="block text-[#000000] text-3xl font-lato mb-[80px] ">
@@ -33,7 +37,7 @@ function Login() {
                     className="absolute pointer-events-none mt-5 ml-[20px] "
                   />
                   <input
-                    className="pl-[55px] rounded-[10px] lg:w-[570px] md:w-[400px] sm:w-[200px] h-[70px]  ring-1 ring-[#94A3BB] text-2xl w-[569px] h-[70px] text-[#000000] mt-[19px] focus:outline-none "
+                    className="pl-[55px] rounded-[10px] lg:w-[570px] md:w-[400px] sm:w-[260px] h-[70px]  ring-1 ring-[#94A3BB] text-2xl w-[569px] h-[70px] text-[#000000] mt-[19px] focus:outline-none "
                     type="email"
                     placeholder="Enter Email"
                   />
@@ -48,7 +52,7 @@ function Login() {
                     className="absolute pointer-events-none mt-5 ml-[20px] "
                   />
                   <input
-                    className=" pl-[55px] rounded-[10px]  ring-1 ring-[#94A3BB] lg:w-[569px] md:w-[400px] sm:w-[200px] h-[70px] text-[#000000] text-2xl mt-[19px] focus:outline-none mb-[10px]"
+                    className=" pl-[55px] rounded-[10px]  ring-1 ring-[#94A3BB] lg:w-[569px] md:w-[400px] sm:w-[260px] h-[70px] text-[#000000] text-2xl mt-[19px] focus:outline-none mb-[10px]"
                     type="password"
                     placeholder="Enter Email"
                   />
@@ -70,38 +74,39 @@ function Login() {
               </p>
             </Link>
           </div>
-          <div className="lg:ml-[204px] lg:mr-[204px] md:ml-[170px] md:mr-[204px] sm:ml-[70px] sm:mr-[10px]">
-            <button className="bg-[#315D95] lg:w-[488px] md:w-[250px] sm:w-[150px] h-[44px] rounded-[4px]   mb-[56px] font-lato font-normal text-[20px] leading-[24px] text-[#FFFFFF]">
+          <div className="flex flex-col items-center">
+            <button className=" bg-[#315D95] lg:w-[488px] md:w-[250px] sm:w-[150px] h-[44px] rounded-[4px] mb-[56px] font-lato font-normal text-[20px] leading-[24px] text-[#FFFFFF]">
               Login
             </button>
-          </div>
-          <div class="inline-flex items-center justify-center w-full  flex space-x-2 mb-[48px] ">
-            <hr class="lg:w-[203px] md:w-[100px] sm:w-[50px] h-px my-8 bg-[#000000] border-0" />
-            <p className="font-lato font-normal text-[16px] leading-[19px] text-[#94A3BB]">
-              Or log in with
-            </p>
-            <hr class="lg:w-[203px] md:w-[100px] sm:w-[50px] h-px my-8 bg-[#000000] border-0" />
-          </div>
-          <div className="flex ml-[292px] mr-[292px] space-x-[43px] pb-[15px]">
-            <Link>
-              <img className="w-[75px] h-[75px]" src={google} />
-            </Link>
-            <Link>
-              <img className="w-[75px] h-[75px]" src={twitter} />
-            </Link>
-            <Link>
-              <img className="w-[75px] h-[75px]" src={facebook} />
-            </Link>
-          </div>
-          <div>
-            <p className="lg:ml-[507px] lg:mr-[97px] md:ml-[250px] md:mr-[50px] sm:ml-[40px] sm:mr-[10px] font-lato font-normal text-[20px] leading-[24px] text-[#2C2626] pb-[10px]">
-              Don't have an account?
-              <Link to="/select-sign-up">
-                <span className="ml-[12px] text-[#FB6107] text-[20px] font-lato font-bold leading-[24px]">
-                  Sign up!
-                </span>
+            <div class="inline-flex items-center justify-center w-full  flex space-x-2 mb-[48px] ">
+              <hr class="lg:w-[203px] md:w-[100px] sm:w-[50px] h-px my-8 bg-[#000000] border-0" />
+              <p className="font-lato font-normal text-[16px] leading-[19px] text-[#94A3BB]">
+                Or log in with
+              </p>
+              <hr class="lg:w-[203px] md:w-[100px] sm:w-[50px] h-px my-8 bg-[#000000] border-0" />
+            </div>
+            <div className="inline-flex items-center justify-center w-full  flex space-x-6">
+              <Link>
+                <img className="w-[75px] h-[75px]" src={google} />
               </Link>
-            </p>
+              <Link>
+                <img className="w-[75px] h-[75px]" src={twitter} />
+              </Link>
+              <Link>
+                <img className="w-[75px] h-[75px]" src={facebook} />
+              </Link>
+            </div>
+            '
+            <div>
+              <p className="inline-flex items-center justify-center w-full  flex space-x-2 font-lato font-normal text-[20px] leading-[24px] text-[#2C2626] pb-[10px]">
+                Don't have an account?
+                <Link to="/select-sign-up">
+                  <span className="ml-[12px] text-[#FB6107] text-[20px] font-lato font-bold leading-[24px]">
+                    Sign up!
+                  </span>
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
       </div>
