@@ -96,7 +96,7 @@ function Login() {
                 <img className="w-[75px] h-[75px]" src={facebook} />
               </Link>
             </div>
-            '
+            
             <div>
               <p className="inline-flex items-center justify-center w-full  flex space-x-2 font-lato font-normal text-[20px] leading-[24px] text-[#2C2626] pb-[10px]">
                 Don't have an account?
